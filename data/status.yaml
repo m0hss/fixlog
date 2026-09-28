@@ -1,0 +1,16 @@
+# SAMPLE DATA. Replace with verified facts only (what happened, impact, status, fix).
+sample: true
+services:
+  - name: "Example service A"
+    state: "operational"   # operational | degraded | outage
+    note: "Sample entry."
+  - name: "Example service B"
+    state: "degraded"
+    note: "Sample entry."
+incidents:
+  - date: 2026-09-01
+    service: "Example service B"
+    title: "Sample incident"
+    impact: "Sample impact text."
+    status: "resolved"
+    fix: "Sample fix text."

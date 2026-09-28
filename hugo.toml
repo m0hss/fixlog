@@ -1,0 +1,41 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Fixlog"
+theme = "fixlog"
+enableRobotsTXT = true
+capitalizeListTitles = false
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  description = "A personal dev log: generative AI, coding, and whatever I'm shipping this week. Real experiments, real failures."
+  author = "Sassi"
+  footer = "Personal and unofficial. Not affiliated with FixByte."
+
+[menus]
+  [[menus.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 10
+  [[menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 20
+  [[menus.main]]
+    name = "Status"
+    pageRef = "/status"
+    weight = 30
+
+[markup.highlight]
+  noClasses = false
+  style = "github-dark"
+
+[markup.goldmark.renderer]
+  unsafe = false
