@@ -20,6 +20,8 @@ Front matter fields the theme uses:
 | `outcome` | `worked`, `failed`, `in-progress`, `poking`     |
 | `tags`    | list of tags                                    |
 | `summary` | one-line hook shown on cards                    |
+| `metrics`, `snippet`, `note` | optional card extras (real data only) |
+| `sources` | list of `kind`/`ref`/`url`/`note`, shown at the end of a post |
 
 ## Status page
 
@@ -27,4 +29,4 @@ Front matter fields the theme uses:
 
 ## Theme
 
-The theme lives in `themes/fixlog/` and is self-contained (MIT) so it can be published on its own later.
+Design tokens come from `design/DESIGN.md` (Google Stitch). The theme lives in `themes/fixlog/` and is self-contained (MIT) so it can be published on its own later.

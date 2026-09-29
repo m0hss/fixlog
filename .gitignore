@@ -1,3 +1,5 @@
 public/
 resources/_gen/
 .hugo_build.lock
+.claude/
+stitch_fixlog_developer_lab_notebook/
