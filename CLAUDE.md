@@ -31,6 +31,19 @@ Markdown extras: `> quote` renders as the "Core lesson" callout, `- [ ]` task li
 
 `design/DESIGN.md` is the source of truth (from the Google Stitch export). Tokens live at the top of `themes/fixlog/assets/css/main.css`. The full Stitch export sits untracked in `stitch_fixlog_developer_lab_notebook/`. Its sample numbers are mockup filler, not facts.
 
+## Skills
+
+Project skills live in `.claude/skills/`:
+
+- `issue-to-post`: turn a GitHub issue (plus commits, logs, test output) into a draft post with sources. Always `draft: true`.
+- `status-update`: update `data/status.yaml` with verified facts only. No guessed causes, no internal hostnames or secrets.
+
+Use them instead of improvising for those tasks.
+
+## Gotchas
+
+- Don't run `hugo --gc` (or a second build) while `hugo server` is running. It prunes `resources/_gen`, and the running server keeps serving CSS links that now 404, so the page shows as unstyled HTML. Restart the server if that happens.
+
 ## Workflow
 
 Drafts are for Sassi to review. Don't publish, deploy, or post externally unless Sassi asks.
