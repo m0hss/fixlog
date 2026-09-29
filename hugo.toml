@@ -19,6 +19,7 @@ capitalizeListTitles = false
   author = "Sassi"
   footer = "Personal and unofficial. Not affiliated with FixByte."
   avatar = "images/avatar.webp"
+  repo = "https://github.com/m0hss/fixlog"   # footer GitHub icon; remove to hide
   authorRole = "Builder, breaker, note-taker"
   # version = "v0.1"   # optional chip next to the logo
 
