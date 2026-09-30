@@ -18,6 +18,7 @@ capitalizeListTitles = false
   description = "A personal engineering notebook: generative AI experiments, Linux and GNOME tinkering, and whatever I'm shipping this week. Wins, dead ends, and what I learned from both."
   author = "Sassi"
   avatar = "images/avatar.webp"
+  manifest = "manifest.webmanifest"
   repo = "https://github.com/m0hss/fixlog"   # footer GitHub icon; remove to hide
   publicURL = "https://fixlog.run/"          # shown in the footer curl line, also under hugo server
   # footer = "..."                           # optional small line under the footer
