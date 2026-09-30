@@ -1,0 +1,3 @@
+[submodule "themes/fixlog"]
+	path = themes/fixlog
+	url = https://github.com/m0hss/hugo-fixlog.git

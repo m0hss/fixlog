@@ -1,10 +1,11 @@
 # Fixlog
 
-Sassi's personal, unofficial dev log. Hugo (extended, 0.146+), custom theme in `themes/fixlog/`.
+Sassi's personal, unofficial dev log. Hugo (extended, 0.146+), custom theme in `themes/fixlog/`, a git submodule of [m0hss/hugo-fixlog](https://github.com/m0hss/hugo-fixlog).
 
 ## Run
 
 ```bash
+git submodule update --init   # first clone: fetch the theme
 hugo server -D        # http://localhost:1313
 hugo --gc --minify    # production build to public/
 hugo new posts/<slug>.md
@@ -42,6 +43,7 @@ Use them instead of improvising for those tasks.
 
 ## Gotchas
 
+- The theme is a submodule. Theme changes are committed and pushed inside `themes/fixlog/` (to m0hss/hugo-fixlog) first, then the site commits the new submodule pointer (`git add themes/fixlog`).
 - Don't run `hugo --gc` (or a second build) while `hugo server` is running. It prunes `resources/_gen`, and the running server keeps serving CSS links that now 404, so the page shows as unstyled HTML. Restart the server if that happens.
 
 ## Workflow

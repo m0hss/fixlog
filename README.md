@@ -29,4 +29,4 @@ Front matter fields the theme uses:
 
 ## Theme
 
-Design tokens come from `design/DESIGN.md` (Google Stitch). The theme lives in `themes/fixlog/` and is self-contained (MIT) so it can be published on its own later.
+Design tokens come from `design/DESIGN.md` (Google Stitch). The theme lives in its own repo, [m0hss/hugo-fixlog](https://github.com/m0hss/hugo-fixlog) (MIT), included here as a git submodule at `themes/fixlog/`. After cloning, run `git submodule update --init`.
