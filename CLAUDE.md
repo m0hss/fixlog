@@ -44,6 +44,7 @@ Use them instead of improvising for those tasks.
 ## Gotchas
 
 - The theme is a submodule. Theme changes are committed and pushed inside `themes/fixlog/` (to m0hss/hugo-fixlog) first, then the site commits the new submodule pointer (`git add themes/fixlog`).
+- The submodule URL is https (so CI can clone it). To push theme commits over SSH, run once: `git -C themes/fixlog remote set-url --push origin git@github.com:m0hss/hugo-fixlog.git`. Always push the theme before pushing a site commit that bumps the pointer.
 - Don't run `hugo --gc` (or a second build) while `hugo server` is running. It prunes `resources/_gen`, and the running server keeps serving CSS links that now 404, so the page shows as unstyled HTML. Restart the server if that happens.
 
 ## Workflow
