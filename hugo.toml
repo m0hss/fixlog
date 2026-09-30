@@ -15,7 +15,7 @@ capitalizeListTitles = false
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  description = "A personal dev log: generative AI, coding, and whatever I'm shipping this week. Real experiments, real failures."
+  description = "A personal engineering notebook: generative AI experiments, Linux and GNOME tinkering, and whatever I'm shipping this week. Wins, dead ends, and what I learned from both."
   author = "Sassi"
   avatar = "images/avatar.webp"
   repo = "https://github.com/m0hss/fixlog"   # footer GitHub icon; remove to hide
