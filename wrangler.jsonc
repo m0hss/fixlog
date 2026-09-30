@@ -1,0 +1,10 @@
+// Cloudflare Workers static assets. Build: `hugo --gc --minify`, deploy: `npx wrangler deploy`.
+// Custom domain (fixlog.run) is attached in the dashboard, not here.
+{
+  "name": "fixlog",
+  "compatibility_date": "2026-09-30",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
