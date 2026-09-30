@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://fixlog.run/"
 languageCode = "en-us"
 title = "Fixlog"
 theme = "fixlog"
@@ -17,9 +17,10 @@ capitalizeListTitles = false
 [params]
   description = "A personal dev log: generative AI, coding, and whatever I'm shipping this week. Real experiments, real failures."
   author = "Sassi"
-  footer = "Personal and unofficial. Not affiliated with FixByte."
   avatar = "images/avatar.webp"
   repo = "https://github.com/m0hss/fixlog"   # footer GitHub icon; remove to hide
+  publicURL = "https://fixlog.run/"          # shown in the footer curl line, also under hugo server
+  # footer = "..."                           # optional small line under the footer
   authorRole = "Builder, breaker, note-taker"
   # version = "v0.1"   # optional chip next to the logo
 
